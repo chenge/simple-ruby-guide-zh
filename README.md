@@ -324,6 +324,8 @@ puts output
 
 >[本实例英文原文](http://www.leighhalliday.com/creating-ruby-dsl)
 
+
+
 #附录 学习Ruby的一些小窍门
 
 
