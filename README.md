@@ -325,7 +325,7 @@ puts output
 >[本实例英文原文](http://www.leighhalliday.com/creating-ruby-dsl)
 
 #附录 学习Ruby的一些小窍门
----------
+
 
 ##必备工具
 
@@ -405,7 +405,7 @@ Kernel模块是核心，很多重要的方法都在里面。推荐看《Ruby元�
 
 
 #告别：
--------------
+
 
 希望这本小书成为你学习Ruby的起点，再见！
 
