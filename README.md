@@ -166,7 +166,7 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
 
 
 ><img src='http://mixandgo.com/uploads/blog_image/image/20/mastering_ruby_blocks.jpg' width=800 />
-[5分钟block（英文）](http://mixandgo.com/blog/mastering-ruby-blocks-in-less-than-5-minutes)
+[五分钟block-英文](http://mixandgo.com/blog/mastering-ruby-blocks-in-less-than-5-minutes)
 
 
 <h1 id='c4'>第四章 模块</h1>
