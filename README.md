@@ -388,7 +388,7 @@ Kernel模块是核心，很多重要的方法都在里面。推荐看《Ruby元�
 路线图
 
 - 本书属于中间区域，入门书籍。
-<img src='https://ruby-china-files.b0.upaiyun.com/photo/2015/79aa594a748c3f53008cabedf9388d1c.png'/>
+<img src='https://ruby-china-files.b0.upaiyun.com/photo/2015/79aa594a748c3f53008cabedf9388d1c.png' width=800 />
 
 带有链接的图：https://www.learneroo.com/modules/61/nodes/337 
 
@@ -418,6 +418,6 @@ Kernel模块是核心，很多重要的方法都在里面。推荐看《Ruby元�
 
 
 [请我喝一杯，手机支付宝]
-<img src='https://ruby-china-files.b0.upaiyun.com/photo/2014/742b05af2b572630c94f8c6b544f7d38.jpg'/>
+<img src='https://ruby-china-files.b0.upaiyun.com/photo/2014/742b05af2b572630c94f8c6b544f7d38.jpg' width=200 />
 
 
