@@ -1,4 +1,4 @@
-作者chenge （chenge3k at qq.com）
+作者：chenge（邮件：chenge3k at qq.com， [我的微博](http://www.weibo.com/chenge2k) ）
 
 
 ###目录
@@ -16,6 +16,7 @@
 [第六章 高级：元编程和DSL](#c6)
 
 [附录 学习Ruby的一些小窍门](#tips)
+
 
 
 <h1 id='c1'>第一章 简介</h1>
