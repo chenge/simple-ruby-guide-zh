@@ -391,6 +391,9 @@ Kernel模块是核心，很多重要的方法都在里面。推荐看《Ruby元�
 
 <img src='http://zappable-zappable.rhcloud.com/wp-content/uploads/2012/12/Learn-Ruby-Chart.png' width=800 />
 
+<img src='http://simplecloud.qiniudn.com/944bd3db7397a0b714af6a4cb0558a0d' width=800 />
+
+
 带有链接的图：https://www.learneroo.com/modules/61/nodes/337 
 
 原图：http://www.zappable.com/tag/chart/
