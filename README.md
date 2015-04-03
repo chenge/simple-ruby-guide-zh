@@ -324,10 +324,8 @@ puts output
 
 >[本实例英文原文](http://www.leighhalliday.com/creating-ruby-dsl)
 
-
-
 #附录 学习Ruby的一些小窍门
-
+---------
 
 ##必备工具
 
@@ -389,15 +387,8 @@ Kernel模块是核心，很多重要的方法都在里面。推荐看《Ruby元�
 
 路线图
 
-本书属于中间区域，入门书籍。
-
-<img src='http://zappable-zappable.rhcloud.com/wp-content/uploads/2012/12/Learn-Ruby-Chart.png' width=800 />
-
-##实验
-
-可以复制代码，去[实验楼网站](http://www.shiyanlou.com/),运行看结果。
-<img src='http://simplecloud.qiniudn.com/944bd3db7397a0b714af6a4cb0558a0d' width=800 />
-
+- 本书属于中间区域，入门书籍。
+![](https://ruby-china-files.b0.upaiyun.com/photo/2015/79aa594a748c3f53008cabedf9388d1c.png)
 
 带有链接的图：https://www.learneroo.com/modules/61/nodes/337 
 
@@ -407,7 +398,7 @@ Kernel模块是核心，很多重要的方法都在里面。推荐看《Ruby元�
 
 
 #告别：
-
+-------------
 
 希望这本小书成为你学习Ruby的起点，再见！
 
@@ -426,8 +417,6 @@ Kernel模块是核心，很多重要的方法都在里面。推荐看《Ruby元�
 
 
 
-请我喝一杯，手机支付宝
-
-<img src='https://ruby-china-files.b0.upaiyun.com/photo/2014/742b05af2b572630c94f8c6b544f7d38.jpg' width=200 />
+![请我喝一杯，手机支付宝](https://ruby-china-files.b0.upaiyun.com/photo/2014/742b05af2b572630c94f8c6b544f7d38.jpg)
 
 
