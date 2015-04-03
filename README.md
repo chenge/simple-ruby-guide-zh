@@ -448,6 +448,7 @@ Kernel模块是核心，很多重要的方法都在里面。推荐看《Ruby元�
 
 
 
+[请我喝一杯，手机支付宝]
 
 ![请我喝一杯，手机支付宝](https://ruby-china-files.b0.upaiyun.com/photo/2014/742b05af2b572630c94f8c6b544f7d38.jpg)
 
