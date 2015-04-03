@@ -5,17 +5,17 @@
 
 [第一章 简介](#c1)
 
-第二章 初级：类和对象
+[第二章 初级：类和对象](#c2)
 
-第三章 块
+[第三章 块](#c3)
 
-第四章 模块
+[第四章 模块](#c4)
 
-第五章 中级：单元测试
+[第五章 中级：单元测试](#c5)
 
-第六章 高级：元编程和DSL
+[第六章 高级：元编程和DSL](#c6)
 
-附录 学习Ruby的一些小窍门
+[附录 学习Ruby的一些小窍门](#tips)
 
 
 <h1 id='c1'>第一章 简介</h1>
@@ -64,7 +64,7 @@ http://exercism.io
 
 
 
-# 第二章 初级：类和对象
+<h1 id='c2'>第二章 初级：类和对象</h1>
 ---------
 
 ##Ruby的基本设计原则
@@ -109,7 +109,7 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
 如果你第一次编程，也许你对这些术语还有些陌生，不要紧，多看几次，慢慢就会熟悉起来了。
 
 
-# 第三章 块
+<h1 id='c3'>第三章 块</h1>
 -------
 
 块是ruby的特色。 
@@ -139,7 +139,7 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
 [5分钟block（英文）](http://mixandgo.com/blog/mastering-ruby-blocks-in-less-than-5-minutes)
 
 
-# 第四章 模块
+<h1 id='c4'>第四章 模块</h1>
 --------
 模块也是Ruby的特色。 
 
@@ -170,7 +170,7 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
 
 >[看懂这个视频(英文版)相当于学会了一半的 Ruby](https://ruby-china.org/topics/23481)
 
-# 第五章 中级：单元测试
+<h1 id='c5'>第五章 中级：单元测试</h1>
 --------
 
 
@@ -224,7 +224,7 @@ end
 >[面试准备系列（英文版）](http://samurails.com/interview/prepare-for-a-ruby-job-interview/)
 >可以作为学习的参考。
 
-# 第六章 高级：元编程和DSL
+<h1 id='c6'>第六章 高级：元编程和DSL</h1>
 ------
 DSL是特定领域语言，rails里有很多例子，rake, rspec, migration等等。下面这个例子演示了原理，主要用了method_missing。学完后，再看那些rails代码就比较亲切了。
 
@@ -326,7 +326,7 @@ puts output
 
 >[本实例英文原文](http://www.leighhalliday.com/creating-ruby-dsl)
 
-#附录 学习Ruby的一些小窍门
+<h1 id='tips'>附录 学习Ruby的一些小窍门</h1>
 
 ##必备工具
 
