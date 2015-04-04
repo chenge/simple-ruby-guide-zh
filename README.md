@@ -1,3 +1,6 @@
+#Ruby语言简明入门与提高
+
+
 作者：chenge
 
 联系方式：
@@ -5,7 +8,7 @@
 * [chenge微博谈](http://www.weibo.com/chenge2k)
 
 
-###目录
+#目录
 
 [第一章 简介](#c1)
 
