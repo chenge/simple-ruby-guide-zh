@@ -71,7 +71,9 @@ Ruby是适合于初学者的，即使是从未写过程序的人来学，我相�
 
 网上实验
 
-可以复制代码，去[实验楼网站](http://www.shiyanlou.com/),运行看结果。
+最简单的，[网上直接运行](http://runnable.com/)，选择那个ruby宝石图标，然后把代码复制过去，点绿色的RUN就可以了。
+
+另一种稍微复杂的方式，去[实验楼网站](http://www.shiyanlou.com/),运行看结果。
 <img src='http://simplecloud.qiniudn.com/944bd3db7397a0b714af6a4cb0558a0d' width=800 />
 
 
