@@ -150,6 +150,18 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
 
 如果你第一次编程，也许你对这些术语还有些陌生，不要紧，多看几次，慢慢就会熟悉起来了。
 
+> 视频教程
+> Learn to program using Ruby
+
+共9部分，大约一个小时。[原youtube网址](https://www.youtube.com/channel/UC1dbW9fGofQMbqAIFivmyWw)
+
+我搬运了三个部分到百度，百度云盘
+[ Part 1- Getting started](http://pan.baidu.com/s/1sjJUfzn)
+[ Part 8- Blocks](http://pan.baidu.com/s/1bnFCSc3)
+[ Part 9- Classes and Objects](http://pan.baidu.com/s/1mgAARs0)
+
+youtube有字幕，视频听不懂问题也不大，看演示过程就可以了，还可以练习英语，一举两得。
+
 
 <h1 id='c3'>第三章 块</h1>
 -------
