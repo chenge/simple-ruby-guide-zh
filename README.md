@@ -1,3 +1,7 @@
+#[github版本，支持目录跳转](https://github.com/chenge/simple-ruby-guide-zh)
+
+#[简书版本](http://www.jianshu.com/p/4d674226bc42)
+
 #Ruby语言简明入门与提高
 
 
