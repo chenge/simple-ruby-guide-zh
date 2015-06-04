@@ -70,10 +70,8 @@ Ruby是适合于初学者的，即使是从未写过程序的人来学，我相�
 
 
 * [Ruby in 100 Minutes](http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html)
- 
-
 [100分钟的红宝石](http://fanyi.baidu.com/transpage?query=http%3A%2F%2Ftutorials.jumpstartlab.com%2Fprojects%2Fruby_in_100_minutes.html&ie=utf8&from=en&to=zh&render=1)(百度翻译的中文版)
-* [基础教程](http://www.yiibai.com/ruby/)(欢迎推荐更好的中文版本，最好没有广告)。
+* [20分钟体验 Ruby](https://www.ruby-lang.org/zh_cn/documentation/quickstart/)
 
 
 ##实验
