@@ -1,6 +1,8 @@
-#[github版本，支持目录跳转](https://github.com/chenge/simple-ruby-guide-zh)
 
-#[简书版本](http://www.jianshu.com/p/4d674226bc42)
+> * [github版本，支持目录跳转](https://github.com/chenge/simple-ruby-guide-zh)
+* [简书版本](http://www.jianshu.com/p/4d674226bc42)
+
+![](http://img-storage.qiniudn.com/15-6-11/91358930.jpg)
 
 #Ruby语言简明入门与提高
 
@@ -24,12 +26,7 @@
 
 [第五章 中级：单元测试](#c5)
 
-[第六章 高级：元编程和DSL](#c6)
-
-[附录 学习Ruby的一些小窍门](#tips)
-
-
-
+![](http://img-storage.qiniudn.com/15-6-11/91358930.jpg)
 <h1 id='c1'>第一章 简介</h1>
 --------
 
@@ -69,7 +66,7 @@ Ruby是适合于初学者的，即使是从未写过程序的人来学，我相�
 2. 有兴趣继续的话学中级，可自选书籍或者参考下面的中英文电子版，参考时间1-6个月。
 
 
-* [Ruby in 100 Minutes](http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html)(有目录，简明扼要)
+* [Ruby in 100 Minutes](http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html)(有目录，简明扼要，介绍了11个常用概念，包括有些另类的Symbol类型，:hello)
 [100分钟的红宝石](http://fanyi.youdao.com/WebpageTranslate?keyfrom=fanyi.web.index&url=http%3A%2F%2Ftutorials.jumpstartlab.com%2Fprojects%2Fruby_in_100_minutes.html&type=AUTO&action=FY_BY_CLICKBUTTON)(有道翻译的中文版，翻译效果不错)
 * [20分钟体验 Ruby](https://www.ruby-lang.org/zh_cn/documentation/quickstart/)
 
@@ -80,15 +77,16 @@ Ruby是适合于初学者的，即使是从未写过程序的人来学，我相�
 
 网上实验
 
-最简单的，[网上直接运行](http://runnable.com/)，选择那个ruby宝石图标，然后把代码复制过去，点绿色的RUN就可以了。
+最简单的，[codepad网站直接运行](http://codepad.org/)，代码复制过去，选择ruby.
 
-另一种稍微复杂的方式，去[实验楼网站](http://www.shiyanlou.com/),运行看结果。
+另一种稍微复杂的方式，去[实验楼网站](http://www.shiyanlou.com/)，linux环境下运行看结果，可以在终端Terminal里运行：irb，就可以与ruby对话了。
 <img src='http://simplecloud.qiniudn.com/944bd3db7397a0b714af6a4cb0558a0d' width=800 />
 
 
 本机实验
 
-参考[wiki](https://ruby-china.org/wiki)自行安装Ruby。
+linux和苹果上一般都安装好了ruby，运行ruby -v可以看是否安装了。
+如果没有的话，请参考[wiki](https://ruby-china.org/wiki)自行安装Ruby。windows上也很容易安装的。
 
 >可以尝试这种现代的交互式自学方式。
 >
@@ -114,6 +112,7 @@ http://exercism.io
 
 
 
+![](http://img-storage.qiniudn.com/15-6-11/91358930.jpg)
 
 <h1 id='c2'>第二章 初级：类和对象</h1>
 ---------
@@ -132,29 +131,32 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
 分类是符合人的思维的。比如人类，每个人就是人类的一个实例，约定都翻译成对象。
 
 
+        #注释：定义类
         class Person
           def initialize(name)
              @name = name
           end
 
+          #定义方法
           def show_name
             puts @name
           end
         end
 
+        #创建对象
         zhao = Person.new 'zhao yun ' 
         qian = Person.new 'qian jin '
-
+        
+        #调用方法
         zhao.show_name
         qian.show_name
         
 
 简单解释一下:
-* class是定义类Person
+* class是定义类Person，注意用大写
 * def定义了方法
 * @name是实例变量的写法
-* new是生成对象，两个new就生成了两个对象，会调用initialize这个方法
-   name是参数
+* new是生成对象，两个new就生成了两个对象，会调用initialize这个构造方法，只能用这个名字，name是参数
 * 最后两句是调用方法show_name, puts的意思就是显示一段文字
 
 如果你第一次编程，也许你对这些术语还有些陌生，不要紧，多看几次，慢慢就会熟悉起来了。
@@ -174,6 +176,11 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
 >[ Part 9- Classes and Objects](http://pan.baidu.com/s/1mgAARs0)
 
 >youtube有字幕，视频听不懂问题也不大，看演示过程就可以了，还可以练习英语，一举两得。
+
+结束语：类和对象是最基本的。
+
+![](http://img-storage.qiniudn.com/15-6-11/91358930.jpg)
+
 
 
 <h1 id='c3'>第三章 块</h1>
@@ -206,6 +213,9 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
 
 >[5分钟block（英文）](http://mixandgo.com/blog/mastering-ruby-blocks-in-less-than-5-minutes)
 
+结束语：块无处不在，两种形式do和｛｝
+
+![](http://img-storage.qiniudn.com/15-6-11/91358930.jpg)
 
 <h1 id='c4'>第四章 模块</h1>
 --------
@@ -227,7 +237,7 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
         end
 
         Pi = 2
-        puts Show::Pi #3.14
+        puts Show::Pi #注释：3.14
 
         Person.new.show_msg #Person
         Desk.new.show_msg   #Desk
@@ -237,6 +247,10 @@ Ruby语言的作者Matz在《代码之美》一书中讲述了他的设计思想
 >参考：
 
 >[看懂这个视频(英文版)相当于学会了一半的 Ruby](https://ruby-china.org/topics/23481)
+
+结束语：模块是组织代码的基本方式。
+
+![](http://img-storage.qiniudn.com/15-6-11/91358930.jpg)
 
 <h1 id='c5'>第五章 中级：单元测试</h1>
 --------
@@ -269,8 +283,8 @@ class Calc
 
   def add(a, b)
     result = a + b
-    @logger.log "add #{a}, #{b}"
-    result
+    r = @logger.log "add #{a}, #{b}"
+    result if r
   end
 end
 
@@ -279,18 +293,21 @@ class TestCalc < MiniTest::Test
   def test_add
     mock_logger = MiniTest::Mock.new
     #mock return true
-    mock_logger.expect(:log, true, ['add 2, 5']) 
+    mock_logger.expect(:log, true, ['add 2, 5'])
     calc = Calc.new(mock_logger)
     assert calc.add(2, 5) == 7
     mock_logger.verify
   end
 end
 
-
 ```
 >参考：
 >[面试准备系列（英文版）](http://samurails.com/interview/prepare-for-a-ruby-job-interview/)
 >可以作为学习的参考。
+
+结束语：单元测试是质量的保证。
+
+![](http://img-storage.qiniudn.com/15-6-11/91358930.jpg)
 
 <h1 id='c6'>第六章 高级：元编程和DSL</h1>
 ------
@@ -393,6 +410,9 @@ puts output
 
 
 >[本实例英文原文](http://www.leighhalliday.com/creating-ruby-dsl)
+
+![](http://img-storage.qiniudn.com/15-6-11/91358930.jpg)
+
 
 <h1 id='tips'>附录 学习Ruby的一些小窍门</h1>
 
