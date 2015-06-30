@@ -511,3 +511,7 @@ Kernel模块是核心，很多重要的方法都在里面。推荐看《Ruby元�
 
 
 联系方式：见目录部分
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/chenge/simple-ruby-guide-zh/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
