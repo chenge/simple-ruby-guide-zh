@@ -1,3 +1,6 @@
+# 重要说明，推荐学习Elixir语言，很容易学习，期待它把函数式编程带入主流开发。这个文档以后不再更新了。2016-11-29
+
+
 rails请参考我写的简明Ruby系列：[rails简明实用入门指南](http://blog.csdn.net/freeagle/article/details/46658607)
 
 本书其他版本：
