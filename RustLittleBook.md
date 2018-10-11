@@ -25,7 +25,7 @@ Here is hello world:
 ```c
 // This is the comment content and will be ignored by the compiler.
 
-Fn main() {
+fn main() {
     Println!("Hello Rust World!");
 }
 ```
@@ -74,7 +74,7 @@ Struct Rectangle {
     P2: Point,
 }
 
-Fn main() {
+fn main() {
     // Instantiate the structure `Point`
     Let point: Point = Point { x: 0.3, y: 0.4 };
 
@@ -101,7 +101,7 @@ Trait
 
 ```c
 Trait HasArea {
-    Fn area(&self) -> f64;
+    fn area(&self) -> f64;
 }
 
 Struct Circle {
@@ -109,12 +109,12 @@ Struct Circle {
 }
 
 Impl HasArea for Circle {
-    Fn area(&self) -> f64 {
+    fn area(&self) -> f64 {
         Std::f64::consts::PI * (self.radius * self.radius)
     }
 }
 
-Fn main() {
+fn main() {
     Let c = Circle {
         Radius: 1.0f64,
     };
@@ -137,7 +137,7 @@ Let's take a look at the simple usage of HashMap.
 ```c
 Use std::collections::HashMap;
 
-Fn main(){
+fn main(){
     Let mut come_from = HashMap::new();
     // insert
     Come_from.insert("WaySLOG", "HeBei");
@@ -172,7 +172,7 @@ Fn main(){
 
 Look at the array again:
 ```cpp
-Fn main() {
+fn main() {
     Let mut array: [i32; 3] = [0; 3];
 
     Array[1] = 1;
@@ -190,7 +190,7 @@ Fn main() {
 Dynamic array Vec
 
 ```c
-Fn main() {
+fn main() {
     / / Create an empty Vec
     Let v: Vec<i32> = Vec::new();
     Println!("{:?}", v);
@@ -237,7 +237,7 @@ Mod ccc {
     }
 }
 
-Fn main() {
+fn main() {
     Use ccc::print_ccc;
 
     Print_ccc();
@@ -298,7 +298,7 @@ Here is a simple function level test.
 
 ```c
 #[test]
-Fn it_works() {
+fn it_works() {
     Assert!(2>1); // do test work
 }
 ```
