@@ -1,4 +1,4 @@
-## Version 0.8/13.0
+# Rust Little Book 3 Days, Version 0.8/13.0
 
 ## Introduction
 ### Reader positioning
