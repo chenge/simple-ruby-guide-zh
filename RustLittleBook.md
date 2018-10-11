@@ -12,7 +12,7 @@ If you read the simple introduction and don't know the truth, you can check out 
 
 This book adopts a minimalist style and does not seek encyclopedia. The goal is to have a basic understanding after the completion of the course. Hope is an easy way to finish in two or three days.
 
-Refer to ["Study by Rust"] (https://rustwiki.org/zh-CN//rust-by-example/index.html), [RustPrimer] (https://rustcc.gitbooks.io /rustprimer/content/) Two books, please go to more content.
+Refer to ["Study by Rust"](https://rustwiki.org/zh-CN//rust-by-example/index.html), [RustPrimer](https://rustcc.gitbooks.io /rustprimer/content/) Two books, please go to more content.
 
 ## Chapter 1: Basics
 When you start reading, you have some interest.
@@ -45,7 +45,7 @@ $ ./hello
 Hello Rust World!
 ```
 
-There is a [runner] (https://github.com/stevedonovan/runner) that can be run in one step.
+There is a [runner](https://github.com/stevedonovan/runner) that can be run in one step.
 
 In addition, the built-in cargo can provide project management and is introduced in small projects.
 
