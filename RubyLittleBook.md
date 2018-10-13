@@ -1,6 +1,6 @@
 # Chapter 1 Introduction
 
-##brief introduction
+##  brief introduction
 
 Target audience:
 
@@ -18,7 +18,7 @@ With this foundation, if you don't understand it, check out the reference book.
 I will revise it from time to time and add materials that I think are good.
 
 
-##Why write this little book
+##  Why write this little book
 
 I want to introduce the main points of Ruby in the most concise way.
 
@@ -28,7 +28,7 @@ Similar books generally involve a lot of details, but the backbone is not clear,
 
 Of course, this is just an introductory book. Practice depends on yourself.
 
-##study plan
+##  study plan
 
 It is recommended that you take two steps, one day for primary experience and one to six months for intermediate level.
 
@@ -41,7 +41,7 @@ It is recommended that you take two steps, one day for primary experience and on
 * [20 minutes experience Ruby](https://www.ruby-lang.org/en_us/documentation/quickstart/)
 
 
-##experiment
+##  experiment
 
 You can experiment online or natively.
 
@@ -63,11 +63,11 @@ If not, please install Ruby yourself by referring to [wiki](https://ruby-china.o
 * [Compute Ruby Interactive Course](http://www.jisuanke.com/class/info/14)
 * [codeacademy English Ruby Interactive Course](http://www.codecademy.com/en/tracks/ruby)
 
-## Community
+##   Community
 Http://exercism.io
 It is a good English interactive programming community.
 
-## version change
+##   version change
 
 change:
 
@@ -77,7 +77,7 @@ change:
 
 2015-1-23: Added "Interview Preparation Series"
 
-## reader feedback
+##   reader feedback
 I hope you can write down the feelings of reading and improve your opinions.
 
 
@@ -86,7 +86,7 @@ I hope you can write down the feelings of reading and improve your opinions.
 
 # Chapter 2 Elementary: Classes and Objects
 
-##Ruby's basic design principles
+##  Ruby's basic design principles
 
 Welcome to the fun Ruby tour!
 
@@ -96,7 +96,7 @@ Puts 'hello world'
 
 The line of code in the example can be concise, conservative (puts inherited from C) and simple. Flexibility and balance need to be understood in more complex code.
 
-## Class and Object
+##   Class and Object
 Classification is in line with human thinking. For example, human beings, each person is an instance of human beings, and the conventions are translated into objects.
 
 
@@ -133,7 +133,7 @@ If you are programming for the first time, maybe you are a little stranger to th
 
 > References, the first reading can be skipped, or select the part of interest.
 
-> ## English video: Learn to program using Ruby
+> ##   English video: Learn to program using Ruby
 
 > A total of 9 parts, about an hour. [original youtube URL](https://www.youtube.com/channel/UC1dbW9fGofQMbqAIFivmyWw)
 
@@ -386,7 +386,7 @@ Will get this result:
 
 # Appendix Learn some tips for Ruby
 
-## tools
+##   tools
 
 Irb comes with it.
 
@@ -396,26 +396,26 @@ Ls Object
 
 Like a directory operation.
 
-##editor
+##  editor
 
 Sublime and open source atoms are good.
 The SublimeCodeIntel plugin can provide Ruby code hints.
 
-## ancestor
+##   ancestor
 
 1.9.3-p545 :023 > String.ancestors
  => [String, Comparable, Object, Kernel, BasicObject]
 
 There are four superiors in front of the String
 
-## Filter method
+##  Filter method
 
 Ruby has so many methods that I have to use grep.
 
 1.9.3-p545 :049 > [].methods.grep /^me/
  => [:member?, :methods, :method]
 
-## method
+##  method
 
 1.9.3-p545 :018 > {}.method :select
 => #<Method: Hash#select>
@@ -424,7 +424,7 @@ Ruby has so many methods that I have to use grep.
 
 The method method can be implemented.
 
-##Document
+## Document
 
 If you are looking for a clear method, you can use ri, which is convenient and quick.
 
@@ -432,7 +432,7 @@ Ri String.sub
 
 However, this approach does not seem to work well. There is a dedicated dash software that works great. It seems to only support mac.
 
-##object model
+## object model
 
 The principles of various object languages ​​are similar, but the internal implementation model is different. Ruby is simple to use and complex internally.
 
@@ -440,7 +440,7 @@ When you feel that Ruby is easy to use, you should actually thank Matz for his w
 
 The Kernel module is the core and many important methods are in it. It is recommended to read "Ruby Metaprogramming", which is described in detail in the book.
 
-## Books
+##  Books
 
 getting Started
 
