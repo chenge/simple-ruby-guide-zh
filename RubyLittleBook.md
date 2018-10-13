@@ -102,27 +102,27 @@ The line of code in the example can be concise, conservative (puts inherited fro
 Classification is in line with human thinking. For example, human beings, each person is an instance of human beings, and the conventions are translated into objects.
 
 ```
-#Defining classes
-Class Person
-  Def initialize(name)
-     @name = name
-  End
+        #Defining classes
+        Class Person
+          Def initialize(name)
+             @name = name
+          End
 
-  #definition method
-  Def show_name
-    Puts @name
-  End
-End
+          #definition method
+          Def show_name
+            Puts @name
+          End
+        End
 
-#Create object
-Zhao = Person.new 'zhao yun '
-Qian = Person.new 'qian wei '
+        #Create object
+        Zhao = Person.new 'zhao yun'
+        Qian = Person.new 'qian wei'
+        
+        #call method
+        Zhao.show_name
+        Qian.show_name
 
-#call method
-Zhao.show_name
-Qian.show_name
-```        
-
+```
 
 Briefly explain:
 
@@ -147,7 +147,7 @@ If you are programming for the first time, maybe you are a little stranger to th
 
 >[ Part 9- Classes and Objects](http://pan.baidu.com/s/1mgAARs0)
 
->youtube has subtitles, the video does not understand the problem is not big, you can see the demonstration process, you can practice English, kill two birds with one stone.
+
 
 Conclusion: Classes and objects are the most basic.
 
@@ -160,20 +160,18 @@ Conclusion: Classes and objects are the most basic.
 The block is a feature of ruby.
 
 ```
-3.times do
-  Puts 'hello world'
-End
+          3.times do
+            Puts 'hello world'
+          End
+          
+          3.times { puts 'one line hi' }
 
-3.times { puts 'one line hi' }
-
-People = ['zhao', 'qian']
-
-People.each do |x|
-  Puts x
-End
+          People = ['zhao', 'qian']
+          
+          People.each do |x|
+            Puts x
+          End
 ```
-
-
 The above is the way to write two blocks, the first one is no parameter, the single line is bracketed. The latter with the parameter x, [] is an array. A block can be thought of as an independent function, working in tandem with the methods in front of the block, just like a two-person turn.
 
 
@@ -194,29 +192,29 @@ Conclusion: Blocks are everywhere, two forms do and {}
 # Chapter 4 Module
 
 Modules are also featured in Ruby.
-```ruby
-Module Show
-  Def show_msg
-    Puts self.class
-  End
-  Pi = 3.14
-End
 
-Class Person
-  Include show
-End
-
-Class desk
-  Include show
-End
-
-Pi = 2
-Puts Show::Pi #Note: 3.14
-
-Person.new.show_msg #Person
-Desk.new.show_msg #Desk
 ```
+        Module Show
+          Def show_msg
+            Puts self.class
+          End
+          Pi = 3.14
+        End
 
+        Class Person
+          Include show
+        End
+
+        Class desk
+          Include show
+        End
+
+        Pi = 2
+        Puts Show::Pi #Note: 3.14
+
+        Person.new.show_msg #Person
+        Desk.new.show_msg #Desk
+```
 There are two main functions, one is to use as a namespace to avoid name conflicts, such as Pi in the example. The other is shared code, in which the Person and Desk share the code for Show.
 
 >Reference:
@@ -247,7 +245,7 @@ It mainly includes test objects and dependent objects.
   * outgoing query is not tested.
 
 ```
- #minitest gem, you can install it yourself: gem install minitest
+#minitest gem, you can install it yourself: gem install minitest
 Require "minitest/autorun"
 
 Class Calc
@@ -275,6 +273,7 @@ Class TestCalc < MiniTest::Test
 End
 
 ```
+
 >Reference:
 >[Interview Preparation Series (English)](http://samurails.com/interview/prepare-for-a-ruby-job-interview/)
 > can be used as a reference for learning.
@@ -478,5 +477,6 @@ Original image: http://www.zappable.com/tag/chart/
 # farewell:
 
 I hope this little book is the starting point for you to learn Ruby, goodbye!
+
 
 
