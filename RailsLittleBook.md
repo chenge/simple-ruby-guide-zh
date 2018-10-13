@@ -201,12 +201,12 @@ Deployment is a relatively complex topic, and it won't go into depth here.
 Pry has many advantages, such as color, the utility command `ls String` and so on.
 Can be used separately, familiar can be added to the rails, you need to add pry, pry-rails two gem in the Gemfile.
 
-####Chrome plugin
+#### Chrome plugin
 
 * postman
 * Mysql Admin
 
-####Internet resources
+#### Internet resources
 
 * [Rails BeginnerCheat Sheet](http://www.pragtob.info/rails-beginner-cheatsheet/index.html)
 * [Ruby on Rails Learning Resources Organizing](https://ruby-china.org/topics/26377)
