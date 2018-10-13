@@ -25,7 +25,7 @@ start installation
 
 Assuming ruby ​​is already installed (recommended rvm installation management ruby, unfamiliar, you can go to the ruby-china forum wiki), the basic installation is very simple
 ```
-bundle config 'mirror.https://rubygems.org' 'https://ruby.taobao.org' #Configuration for Taobaoyuan
+#bundle config 'mirror.https://rubygems.org' 'https://ruby.taobao.org' #for Chinese, Configuration for Taobaoyuan
 gem install rails -V #-V shows details, you can not
 ```
 
