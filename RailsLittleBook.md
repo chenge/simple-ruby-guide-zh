@@ -1,6 +1,8 @@
+# Rails Little Book 3 Days
+
 # About the foreword
 
-This guide is positioned as a guide to the [rails official guide] (http://guides.ruby-china.org/) and is written for beginners. This book provides an overview. Please refer to the official guide for details.
+This guide is positioned as a guide to the [rails official guide](http://guides.ruby-china.org/) and is written for beginners. This book provides an overview. Please refer to the official guide for details.
 
 ## Software Environment
 Rails 4.2
@@ -13,7 +15,7 @@ You can try "one-hour warm-up" first. If you are interested, you can continue to
 
 Maybe you care how much time you need to learn. I give a reference time. Please pay attention to the reference time that I am talking about. It is enough to get started in one hour. If you are studying a complete project, it will take about two months. The accumulated three projects are six months. Can reach the intermediate level.
 
-In addition, you can refer to the rich free introductory course [Rails 101] (http://growth.xdite.net/courses/rails-101) of Taiwanese users xdite.
+In addition, you can refer to the rich free introductory course [Rails 101](http://growth.xdite.net/courses/rails-101) of Taiwanese users xdite.
 
 # About one hour warm up
 ## Installation troubles
@@ -189,7 +191,7 @@ Deployment is a relatively complex topic, and it won't go into depth here.
 
 ## Common gem
 
-[A good introduction to gem from prograils, English version] (https://prograils.com/posts/ruby-gem-guide-how-to-install-and-work-with-local-gems)
+[A good introduction to gem from prograils, English version](https://prograils.com/posts/ruby-gem-guide-how-to-install-and-work-with-local-gems)
 
 ## Common development tools
 
@@ -206,8 +208,8 @@ Can be used separately, familiar can be added to the rails, you need to add pry,
 
 ####Internet resources
 
-* [Rails BeginnerCheat Sheet] (http://www.pragtob.info/rails-beginner-cheatsheet/index.html)
-* [Ruby on Rails Learning Resources Organizing] (https://ruby-china.org/topics/26377)
+* [Rails BeginnerCheat Sheet](http://www.pragtob.info/rails-beginner-cheatsheet/index.html)
+* [Ruby on Rails Learning Resources Organizing](https://ruby-china.org/topics/26377)
 
 # Two major difficulties in beginners
 I think the relationship between routing and model is two difficult points, so I can focus on learning.
