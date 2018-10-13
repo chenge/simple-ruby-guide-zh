@@ -123,6 +123,7 @@ Classification is in line with human thinking. For example, human beings, each p
         Qian.show_name
 ```        
 
+
 Briefly explain:
 
 * class is to define the class Person, pay attention to capitalize
@@ -159,18 +160,19 @@ Conclusion: Classes and objects are the most basic.
 The block is a feature of ruby.
 
 ```ruby
-          3.times do
-            Puts 'hello world'
-          End
-          
-          3.times { puts 'one line hi' }
+3.times do
+  Puts 'hello world'
+End
 
-          People = ['zhao', 'qian']
-          
-          People.each do |x|
-            Puts x
-          End
+3.times { puts 'one line hi' }
+
+People = ['zhao', 'qian']
+
+People.each do |x|
+  Puts x
+End
  ```
+
 
 The above is the way to write two blocks, the first one is no parameter, the single line is bracketed. The latter with the parameter x, [] is an array. A block can be thought of as an independent function, working in tandem with the methods in front of the block, just like a two-person turn.
 
@@ -192,27 +194,28 @@ Conclusion: Blocks are everywhere, two forms do and {}
 # Chapter 4 Module
 
 Modules are also featured in Ruby.
+```ruby
+Module Show
+  Def show_msg
+    Puts self.class
+  End
+  Pi = 3.14
+End
 
-        Module Show
-          Def show_msg
-            Puts self.class
-          End
-          Pi = 3.14
-        End
+Class Person
+  Include show
+End
 
-        Class Person
-          Include show
-        End
+Class desk
+  Include show
+End
 
-        Class desk
-          Include show
-        End
+Pi = 2
+Puts Show::Pi #Note: 3.14
 
-        Pi = 2
-        Puts Show::Pi #Note: 3.14
-
-        Person.new.show_msg #Person
-        Desk.new.show_msg #Desk
+Person.new.show_msg #Person
+Desk.new.show_msg #Desk
+```
 
 There are two main functions, one is to use as a namespace to avoid name conflicts, such as Pi in the example. The other is shared code, in which the Person and Desk share the code for Show.
 
@@ -244,7 +247,7 @@ It mainly includes test objects and dependent objects.
   * outgoing query is not tested.
 
 ```
- #引用minitest gem, you can install it yourself: gem install minitest
+ #minitest gem, you can install it yourself: gem install minitest
 Require "minitest/autorun"
 
 Class Calc
