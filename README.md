@@ -1,24 +1,3 @@
-# 重要说明，推荐学习Elixir语言，很容易学习，期待它把函数式编程带入主流开发。这个文档以后不再更新了。2016-11-29
-
-
-rails请参考我写的简明Ruby系列：[rails简明实用入门指南](http://blog.csdn.net/freeagle/article/details/46658607)
-
-本书其他版本：
-
-* [github版本](https://github.com/chenge/simple-ruby-guide-zh)
-* [简书版本](http://www.jianshu.com/p/4d674226bc42)
-* [csdn version](http://blog.csdn.net/freeagle/article/details/46659351)(有目录)
-
-
-作者：chenge
-
-联系方式：
-* 邮件：chenge3k at qq.com
-* [chenge微博谈](http://www.weibo.com/chenge2k)
-
-
-
-![分割线](http://img-storage.qiniudn.com/15-6-13/61875638.jpg)
 
 # 第一章 简介
 
