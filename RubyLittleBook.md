@@ -101,7 +101,7 @@ The line of code in the example can be concise, conservative (puts inherited fro
 ##   Class and Object
 Classification is in line with human thinking. For example, human beings, each person is an instance of human beings, and the conventions are translated into objects.
 
-```ruby
+```
 #Defining classes
 Class Person
   Def initialize(name)
@@ -159,7 +159,7 @@ Conclusion: Classes and objects are the most basic.
 
 The block is a feature of ruby.
 
-```ruby
+```
 3.times do
   Puts 'hello world'
 End
@@ -171,7 +171,7 @@ People = ['zhao', 'qian']
 People.each do |x|
   Puts x
 End
- ```
+```
 
 
 The above is the way to write two blocks, the first one is no parameter, the single line is bracketed. The latter with the parameter x, [] is an array. A block can be thought of as an independent function, working in tandem with the methods in front of the block, just like a two-person turn.
