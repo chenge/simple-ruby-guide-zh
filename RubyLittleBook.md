@@ -1,247 +1,481 @@
-# Rails Little Book 3 Days
+# Ruby Little Book 3 Days
 
-# About the foreword
+# Chapter 1 Introduction
 
-This guide is positioned as a guide to the [rails official guide](http://guides.ruby-china.org/) and is written for beginners. This book provides an overview. Please refer to the official guide for details.
+##  brief introduction
 
-## Software Environment
-Rails 4.2
+Target audience:
 
-Ruby 2.0
+* First time programmer
+* First time learning Ruby programmers
 
-## How to read
+Ruby is suitable for beginners, even those who have never written a program to learn, I believe that the primary part can be completed in one day.
 
-You can try "one-hour warm-up" first. If you are interested, you can continue to study the basics.
+To help you learn more easily, I try to choose simple content.
 
-Maybe you care how much time you need to learn. I give a reference time. Please pay attention to the reference time that I am talking about. It is enough to get started in one hour. If you are studying a complete project, it will take about two months. The accumulated three projects are six months. Can reach the intermediate level.
+By browsing the directory, I know what I chose. At the beginning, I chose three groups of four concepts. This book is aimed at beginners, so the middle and high level are just introduced, and I introduced the unit test and DSL. These contents, especially the primary part, are the core content that I think is more important for beginners based on my self-learning experience. It is not that other Arrays, Hash, etc. are not important, just for concise and quick learning.
 
-In addition, you can refer to the rich free introductory course [Rails 101](http://growth.xdite.net/courses/rails-101) of Taiwanese users xdite.
+With this foundation, if you don't understand it, check out the reference book.
 
-# About one hour warm up
-## Installation troubles
-The installation of rails was very simple, but the domestic network environment made rails development more difficult. At present, there seems to be no good way.
-
-start installation
-
-Assuming ruby ​​is already installed (recommended rvm installation management ruby, unfamiliar, you can go to the ruby-china forum wiki), the basic installation is very simple
-```
-bundle config 'mirror.https://rubygems.org' 'https://ruby.taobao.org' #Configuration for Taobaoyuan
-gem install rails -V #-V shows details, you can not
-```
-
-Next generate a simple project
-
-```
-rails new rails-rsg
-```
-
-Next, all the used gems are listed in the bundle, /Gemfile, and the bundle is installed once.
-
-```
-cd rails-rsg
-bundle install -V #-V shows the details, you can not
-```
-
-If it goes well, it will be installed in a few minutes. If it doesn't work, you may need to change the installation source of Taobao, or vpn.
-## Experiment
-
-The purpose of this warm-up experiment is to provide some perceptual knowledge. Most of the students do not like to read the theory.
-
-Generate a simple blog post.
-```
-rails g scaffold Blog title:string body:text
-```
-The above command will generate some programs to create a data table, which will be explained in detail in the subsequent database section.
-
-Next, execute the generated build data table program
-
-```
-rake db:migrate
-```
-If it is successful, the data table will be built. The default is to use sqlite3 database, which is very simple and practical.
-
-The last step is to start the server.
-
-```
-rails s
-```
-
-The browser is ready to access.
-
-```
-http://localhost:3000/blogs
-```
-You can use the browser to operate, there are some perceptual knowledge.
-
-How does the browser input URL correspond to the program? This is called routing. Let's take a look at the standard routing. If you haven't done web development, you may not understand it at first. There is an impression. Prefix is The routing name prefix is ​​used in subsequent views, such as blogs\_path.
-
-The routing part that follows will learn further.
+I will revise it from time to time and add materials that I think are good.
 
 
+##  Why write this little book
 
-![Write a picture description here | left](http://img.blog.csdn.net/20150627072819379 "")
+I want to introduce the main points of Ruby in the most concise way.
+
+I am a programmer myself. I was exposed to Ruby around 2005. I was looking at the introduction of the book. I had a good impression of Ruby, but I still felt that I had no choice but to feel complicated. After a few more years, I read a few reference books and seemed to understand some.
+
+Similar books generally involve a lot of details, but the backbone is not clear, beginners often have no way to go, and the burden of learning is heavy. If I read the introduction of this book at first, I think it is helpful.
+
+Of course, this is just an introductory book. Practice depends on yourself.
+
+##  study plan
+
+It is recommended that you take two steps, one day for primary experience and one to six months for intermediate level.
+
+1. Learn the first elementary part first, perceive and cultivate interest, and refer to the time of day.
+2. If you are interested in continuing to learn the intermediate level, you can choose your own books or refer to the electronic version in Chinese and English below. The reference time is 1-6 months.
 
 
-# About basics
+* [Ruby in 100 Minutes](http://tutorials.jumpstartlab.com/projects/ruby_in_100_minutes.html) (There are directories, concise, and introduces 11 common concepts, including some alternative Symbol types, :hello)
+[100 minutes of ruby](http://fanyi.youdao.com/WebpageTranslate?keyfrom=fanyi.web.index&url=http%3A%2F%2Ftutorials.jumpstartlab.com%2Fprojects%2Fruby_in_100_minutes.html&type=AUTO&action=FY_BY_CLICKBUTTON)( Chinese version of the translation, the translation is good)
+* [20 minutes experience Ruby](https://www.ruby-lang.org/en_us/documentation/quickstart/)
 
-## rails design principles
-There are two main ones:
 
-* Do not repeat the principle DRY
-* Conventions are better than configuration principles CoC
+##  experiment
 
-Not repeating is the meaning of simplicity, and DSL (domain-specific language) is designed for different tasks.
-Conventional principles can ease the burden on the programmer.
+You can experiment online or natively.
 
-As you learn more, you can appreciate these two principles.
+Online experiment
 
-## Common configuration files
+The easiest, [codepad website runs directly](http://codepad.org/), the code is copied in the past, choose ruby.
 
-```
-/Gemfile
-/config/database.yml
-/config/routes.rb
-```
-The name can be explained, it will not be explained in detail. The route in the warm-up is generated by routes.rb.
+Another slightly more complicated way, go to [Experimental Building Website](http://www.shiyanlou.com/), run the linux environment to see the results, you can run in the terminal Terminal: irb, you can talk to ruby.
+<img src='http://simplecloud.qiniudn.com/944bd3db7397a0b714af6a4cb0558a0d' width=800 />
+
+
+Native experiment
+
+Ruby is usually installed on Linux and Apple. Run ruby ​​-v to see if it is installed.
+If not, please install Ruby yourself by referring to [wiki](https://ruby-china.org/wiki). Windows is also very easy to install.
+
+> Try this modern interactive self-learning method.
+>
+* [Compute Ruby Interactive Course](http://www.jisuanke.com/class/info/14)
+* [codeacademy English Ruby Interactive Course](http://www.codecademy.com/en/tracks/ruby)
+
+##   Community
+Http://exercism.io
+It is a good English interactive programming community.
+
+##   version change
+
+change:
+
+2015-3-26: The advanced part uses the DSL example, which is more practical and easier to understand.
+
+2015-1-26: Rewriting unit tests is easier to understand
+
+2015-1-23: Added "Interview Preparation Series"
+
+##   reader feedback
+I hope you can write down the feelings of reading and improve your opinions.
+
+
+
+![Division line](http://img-storage.qiniudn.com/15-6-13/61875638.jpg)
+
+# Chapter 2 Elementary: Classes and Objects
+
+##  Ruby's basic design principles
+
+Welcome to the fun Ruby tour!
+
+Matz, the author of the Ruby language, describes his design ideas in the book Beauty of Code, which is the five principles of simplicity, conservatism, simplicity, flexibility, and balance.
+
+Puts 'hello world'
+
+The line of code in the example can be concise, conservative (puts inherited from C) and simple. Flexibility and balance need to be understood in more complex code.
+
+##   Class and Object
+Classification is in line with human thinking. For example, human beings, each person is an instance of human beings, and the conventions are translated into objects.
 
 ```
-  resources :blogs
-```
-This line produces seven standard routes, which are very concise, which is why rails is called web DSL.
-## Routing
+        #Defining classes
+        Class Person
+          Def initialize(name)
+             @name = name
+          End
 
-Referring to the map of the warm-up experiment, I used the blog name as an example. It is the get method, and the uri is written as /blogs/1.html. :id, :format is the notation for ruby ​​symbols. (.:format) means that this part can be omitted, and finally corresponds to the method show of the controller BlogsController.
+          #definition method
+          Def show_name
+            Puts @name
+          End
+        End
 
-The basic route is seven, and the update has two, a total of eight.
-
-More complicated, there are nested routes, as well as member, collection routes. Not complicated, just check it and you will know.
-
-## Lab: Verifying Routes
-```
-Rails c
-Rails.application.routes.recognize_path "http://localhost:3000/users/11"
-```
-You can verify any route and which controller it corresponds to.
-
-## Troubleshooting
-
-```
-raise @order.inspect
-```
-This method is very convenient and intuitive, the browser can be seen, basically do not need to look at the terminal's less friendly black screen.
-
-Gem better\_errors can improve the default error prompt
-
-Gem byebug can set breakpoints
-
-## Database
-
-These are the most commonly used database-related rake commands.
-```
-rake db:drop:all
-rake db:create
-rake db:migrate
-rake db:seed
-```
-When you need to modify the data table, use the following command to generate a file.
-```
-rails g migration NameOfAny
-```
-After writing the code in the file (please refer to the specific method), then run it.
+        #Create object
+        Zhao = Person.new 'zhao yun'
+        Qian = Person.new 'qian wei'
+        
+        #call method
+        Zhao.show_name
+        Qian.show_name
 
 ```
-rake db:migrate
+
+Briefly explain:
+
+* class is to define the class Person, pay attention to capitalize
+* def defines the method
+* @name is the way the instance variable is written
+* new is the generated object, two new will generate two objects, will call the initialize constructor, can only use this name, name is the parameter
+* The last two sentences are called method show_name, puts means to display a paragraph of text
+
+If you are programming for the first time, maybe you are a little stranger to these terms. It doesn't matter. If you look at it a few times, you will become familiar with it.
+
+> References, the first reading can be skipped, or select the part of interest.
+
+> ##   English video: Learn to program using Ruby
+
+> A total of 9 parts, about an hour. [original youtube URL](https://www.youtube.com/channel/UC1dbW9fGofQMbqAIFivmyWw)
+
+> I carried three parts to Baidu, Baidu cloud disk
+>[ Part 1- Getting started](http://pan.baidu.com/s/1sjJUfzn)
+
+>[ Part 8- Blocks](http://pan.baidu.com/s/1bnFCSc3)
+
+>[ Part 9- Classes and Objects](http://pan.baidu.com/s/1mgAARs0)
+
+
+
+Conclusion: Classes and objects are the most basic.
+
+![Division line](http://img-storage.qiniudn.com/15-6-13/61875638.jpg)
+
+
+
+# Chapter 3 Block
+
+The block is a feature of ruby.
+
+```
+          3.times do
+            Puts 'hello world'
+          End
+          
+          3.times { puts 'one line hi' }
+
+          People = ['zhao', 'qian']
+          
+          People.each do |x|
+            Puts x
+          End
+```
+The above is the way to write two blocks, the first one is no parameter, the single line is bracketed. The latter with the parameter x, [] is an array. A block can be thought of as an independent function, working in tandem with the methods in front of the block, just like a two-person turn.
+
+
+>Reference:
+
+>The reference part comes from some information on the Internet. Some of them are in English. It is more difficult. Beginners can skip it. If you need to see it again.
+
+
+
+><img src='http://mixandgo.com/uploads/blog_image/image/20/mastering_ruby_blocks.jpg' width=800 />
+
+>[5 minute block (English)](http://mixandgo.com/blog/mastering-ruby-blocks-in-less-than-5-minutes)
+
+Conclusion: Blocks are everywhere, two forms do and {}
+
+![Division line](http://img-storage.qiniudn.com/15-6-13/61875638.jpg)
+
+# Chapter 4 Module
+
+Modules are also featured in Ruby.
+
+```
+        Module Show
+          Def show_msg
+            Puts self.class
+          End
+          Pi = 3.14
+        End
+
+        Class Person
+          Include show
+        End
+
+        Class desk
+          Include show
+        End
+
+        Pi = 2
+        Puts Show::Pi #Note: 3.14
+
+        Person.new.show_msg #Person
+        Desk.new.show_msg #Desk
+```
+There are two main functions, one is to use as a namespace to avoid name conflicts, such as Pi in the example. The other is shared code, in which the Person and Desk share the code for Show.
+
+>Reference:
+
+>[Reading this video (English version) is equivalent to learning half of Ruby](https://ruby-china.org/topics/23481)
+
+Conclusion: Modules are the basic way to organize code.
+
+![Division line](http://img-storage.qiniudn.com/15-6-13/61875638.jpg)
+
+# Chapter 5 Intermediate: Unit Test
+
+
+Start this chapter.
+
+>Additional note: If you are not very experienced, it will be difficult to see this unit test example. You can combine this example and the basic tutorials mentioned in the introduction to learn.
+
+The relationship diagram is as follows
+
+--incoming————"Test object---outgoing---"Dependent object
+
+It mainly includes test objects and dependent objects.
+
+- incoming test status.
+
+- The outgoing sub-command and the query, the command is output, and the query has no output.
+  * outgoing command test behavior, mock the object with mock.
+  * outgoing query is not tested.
+
+```
+#minitest gem, you can install it yourself: gem install minitest
+Require "minitest/autorun"
+
+Class Calc
+  Def initialize(logger)
+    @logger = logger
+  End
+
+  Def add(a, b)
+    Result = a + b
+    r = @logger.log "add #{a}, #{b}"
+    Result if r
+  End
+End
+
+# < is inheritance
+Class TestCalc < MiniTest::Test
+  Def test_add
+    Mock_logger = MiniTest::Mock.new
+    #mock return true
+    Mock_logger.expect(:log, true, ['add 2, 5'])
+    Calc = Calc.new(mock_logger)
+    Assert calc.add(2, 5) == 7
+    Mock_logger.verify
+  End
+End
+
 ```
 
-Mysql database requires gem mysql2
+>Reference:
+>[Interview Preparation Series (English)](http://samurails.com/interview/prepare-for-a-ruby-job-interview/)
+> can be used as a reference for learning.
 
-## rake
+Conclusion: Unit testing is a guarantee of quality.
 
-It is said that rails 5 will no longer use rake.
+![Division line](http://img-storage.qiniudn.com/15-6-13/61875638.jpg)
 
-The following command lists all tasks
+# Chapter 6 Advanced: Meta Programming and DSL
+
+DSL is a domain-specific language, there are many examples in rails, rake, rspec, migration and so on. The following example demonstrates the principle, mainly using method_missing. After learning, look at the rails code is more intimate.
+
+Of course, this book is mainly an introductory book. For more details, please refer to the book "Ruby Metaprogramming".
+
+```ruby
+
+Class FancyMarkup
+
+  Attr_accessor :indents, :html
+
+  Def initialize
+    @indents = 0
+    @html = ""
+  End
+
+  # Catch-all method to avoid creating methods
+  # for each HTML element.
+  Def method_missing(m, *args, &block)
+    Tag(m, args, &block)
+  End
+
+  # The first method called when creating an
+  # HTML document.
+  Def document(*args, &block)
+    Tag(:html, args, &block)
+  End
+
+  Private
+
+  # Create the HTML tag
+  # @param (String|Symbol) HTML tag (ul, li, strong, etc...)
+  # @param (Array) Can contain a String of text or a Hash of attributes
+  # @param (Block) An optional block which will further nest HTML
+  Def tag(html_tag, args, &block)
+    Content = find_content(args)
+    Options = html_options(find_options(args))
+
+    Html << "\n#{indent}<#{html_tag}#{options}>#{content}"
+    If block_given?
+      @indents += 1
+      Instance_eval(&block)
+      @indents -= 1
+      Html << "\n#{indent}"
+    End
+    Html << "</#{html_tag}>"
+  End
+
+  # Searching the tag arguments, find the text/context element.
+  Def find_content(args)
+    Args.select{|arg| arg.is_a? String}.first || nil
+  End
+
+  # Searching the tag arguments, find the hash/attributes element
+  Def find_options(args)
+    Args.select{|arg| arg.is_a? Hash}.first || {}
+  End
+
+  # Indent output number of spaces
+  Def indent
+    " " * indents
+  End
+
+  # Build html options string from Hash
+  Def html_options(options)
+    Options.collect{|key, value|
+      Value = value.to_s.gsub('"', '\"')
+      " #{key}=\"#{value}\""
+    }.join("")
+  End
+End
+
+Output = FancyMarkup.new.document do
+  Body do
+    Div id: "container" do
+      Ul class: "pretty" do
+        Li "Item 1", class: :active
+        Li "Item 2"
+      End
+    End
+  End
+End
+
+Puts output
 
 ```
-rake -T
-```
-
-You can write your own task, plus desc "description" before the task, it will appear in the task list.
-
-## controller
-Immediately after the routing is the controller. Can be generated with the command:
+Will get this result:
 
 ```
-rails g controller Samples
+<html>
+  <body>
+    <div id="container">
+      <ul class="pretty">
+        <li class="active">Item 1</li>
+        <li>Item 2</li>
+      </ul>
+    </div>
+  </body>
+</html>
 ```
 
-## About the model
 
-Command generation model
+>[This example is in English](http://www.leighhalliday.com/creating-ruby-dsl)
 
-```
-rails g model Sample title:string
-```
-This will generate a data table migration file at the same time, please refer to the database section.
+![Division line](http://img-storage.qiniudn.com/15-6-13/61875638.jpg)
 
-## Deployment
-There are two choices, Capistrano and Mina, I have used the former. The latter is said to be simpler.
-Deployment can complete some automatic tasks, such as database modification, this is the ftp method that php can't do.
 
-Deployment is a relatively complex topic, and it won't go into depth here.
+# Appendix Learn some tips for Ruby
 
-## Common gem
+##   tools
 
-[A good introduction to gem from prograils, English version](https://prograils.com/posts/ruby-gem-guide-how-to-install-and-work-with-local-gems)
+Irb comes with it.
 
-## Common development tools
+Pry is better to use, so you can do this:
 
-#### About basic tools
-* pry
+Ls Object
 
-Pry has many advantages, such as color, the utility command `ls String` and so on.
-Can be used separately, familiar can be added to the rails, you need to add pry, pry-rails two gem in the Gemfile.
+Like a directory operation.
 
-####Chrome plugin
+##  editor
 
-* postman
-* Mysql Admin
+Sublime and open source atoms are good.
+The SublimeCodeIntel plugin can provide Ruby code hints.
 
-####Internet resources
+##   ancestor
 
-* [Rails BeginnerCheat Sheet](http://www.pragtob.info/rails-beginner-cheatsheet/index.html)
-* [Ruby on Rails Learning Resources Organizing](https://ruby-china.org/topics/26377)
+1.9.3-p545 :023 > String.ancestors
+ => [String, Comparable, Object, Kernel, BasicObject]
 
-# Two major difficulties in beginners
-I think the relationship between routing and model is two difficult points, so I can focus on learning.
+There are four superiors in front of the String
 
-Routing is relatively easy to experiment with the effects of different writing methods.
-The relationship of model includes has\_one, has\_many, belongs\_to, etc. Please refer to the official guide. You can experiment in the rails console.
+##  Filter method
 
-The view I found it difficult at first, but later I found out that the route was not understood clearly.
+Ruby has so many methods that I have to use grep.
 
-# About traditional web development
-## view
+1.9.3-p545 :049 > [].methods.grep /^me/
+ => [:member?, :methods, :method]
 
-You can look at the files in the /app/views directory and understand that route.
+##  method
 
-For example, blogs\_path, this method is automatically generated according to the route, there is also a blogs\_url, the difference is that the url method has the http: protocol.
+1.9.3-p545 :018 > {}.method :select
+=> #<Method: Hash#select>
+1.9.3-p545 :019 > {}.method :reduce
+=> #<Method: Hash(Enumerable)#reduce>
 
-## Assets
+The method method can be implemented.
 
-This is mainly to solve the problem of slow references to js, ​​css, etc., and multiple files are combined into a single file. However, it also brings new complexity problems while solving.
+## Document
 
-In the development phase, directly reference /app/assets, if the debug is opened, the page will reference the independent file. In the deployment phase, you need to pre-compile with rake assets:precompile and generate it to public.
+If you are looking for a clear method, you can use ri, which is convenient and quick.
 
-Gem quiet\_assets can close the related display on the terminal.
+Ri String.sub
 
-# API Development
-Mobile phone development does not require a view, but it is simple.
-## JSON
-This is fine.
-```
-    render json: { blogs: @blogs }
-```
+However, this approach does not seem to work well. There is a dedicated dash software that works great. It seems to only support mac.
 
-## API Documentation
+## object model
 
-I am currently writing with markdown, which is more flexible, but the effect is average. There are some popular programs that are not currently used.
+The principles of various object languages ​​are similar, but the internal implementation model is different. Ruby is simple to use and complex internally.
+
+When you feel that Ruby is easy to use, you should actually thank Matz for his work.
+
+The Kernel module is the core and many important methods are in it. It is recommended to read "Ruby Metaprogramming", which is described in detail in the book.
+
+##  Books
+
+getting Started
+
+- Ruby Chinese official website
+
+- "Stupid way to learn Ruby"
+
+improve
+
+- Eloquent Ruby
+
+- Ruby Meta Programming
+
+- Object-Oriented Design Practice Guide: Ruby Language Description
+
+route map
+
+- This book belongs to the middle area, the entry book.
+![books](https://ruby-china-files.b0.upaiyun.com/photo/2015/79aa594a748c3f53008cabedf9388d1c.png)
+
+Diagram with links: https://www.learneroo.com/modules/61/nodes/337
+
+Original image: http://www.zappable.com/tag/chart/
+
+
+
+
+# farewell:
+
+I hope this little book is the starting point for you to learn Ruby, goodbye!
+
+
