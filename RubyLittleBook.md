@@ -102,25 +102,25 @@ The line of code in the example can be concise, conservative (puts inherited fro
 Classification is in line with human thinking. For example, human beings, each person is an instance of human beings, and the conventions are translated into objects.
 
 ```ruby
-        #Defining classes
-        Class Person
-          Def initialize(name)
-             @name = name
-          End
+#Defining classes
+Class Person
+  Def initialize(name)
+     @name = name
+  End
 
-          #definition method
-          Def show_name
-            Puts @name
-          End
-        End
+  #definition method
+  Def show_name
+    Puts @name
+  End
+End
 
-        #Create object
-        Zhao = Person.new 'zhao yun '
-        Qian = Person.new 'qian wei '
-        
-        #call method
-        Zhao.show_name
-        Qian.show_name
+#Create object
+Zhao = Person.new 'zhao yun '
+Qian = Person.new 'qian wei '
+
+#call method
+Zhao.show_name
+Qian.show_name
 ```        
 
 
